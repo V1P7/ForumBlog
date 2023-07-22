@@ -2,7 +2,12 @@
 {% load hitcount_tags %}
 
 {% block content %}
-        <!--Topic Section-->
+         <div class="container">
+        <!--Navigation-->
+        <div class="navigate">
+            <span><a href="{% url 'home' %}">MyForum - Forums</a> >> <a href=""></a> >> <a href="{{ post.get_url }}">{{post.title}}</a></span>
+{#            <a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a>#}
+        </div>
         <div class="topic-container">
             <!--Original thread-->
             <div class="head">
@@ -92,4 +97,5 @@
             <textarea name="reply" id="" placeholder="reply here ... "></textarea>
             <input type="submit" value="submit">
         </div>
+         </div>
 {% endblock %}

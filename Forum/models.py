@@ -1,4 +1,5 @@
 from django.db import models
+from django.shortcuts import reverse
 from django.utils.text import slugify
 from django.contrib.auth import get_user_model
 from django_resized import ResizedImageField
@@ -61,3 +62,7 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+    def get_url(self):
+        return reverse('post_detail', kwargs={'slug': self.slug})
+        
