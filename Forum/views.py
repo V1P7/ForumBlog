@@ -31,5 +31,6 @@ def posts(request, slug):
 	context = {
 		'title': title,
 		'posts': posts,
+		'forum': category,
 	}
 	return render(request, 'Forum/Main/posts.html', context)
