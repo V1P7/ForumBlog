@@ -11,11 +11,7 @@ F
 >
 Forum/utils.py,e/e/eed25e198b57c79a88baef6b1997dfeded1e5260
 >
-Forum/views.py,a/b/ab727a0016bc5138997ab187b711a7150b7263ea
->
 Forum/admin.py,4/f/4f37826c5d491de042275a7fa38906f7004a882b
-=
-Forum/urls.py,7/c/7ce6adb3429147361a4f802f4054216f5355008d
 P
  templates/Forum/Main/detail.html,9/e/9e9cc25bd7c7e2887b90bfb65f4e481d01daa77e
 C
