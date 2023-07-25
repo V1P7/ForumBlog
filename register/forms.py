@@ -16,9 +16,11 @@ class SignUpForm(UserCreationForm):
 class LoginForm(AuthenticationForm):
 	username = forms.CharField(max_length = 30,widget = forms.TextInput(attrs = {'class': 'form-control', 'placeholder': 'Username'}))
 	password = forms.CharField(max_length = 30, widget = forms.PasswordInput(attrs = {'class': 'form-control', 'placeholder': 'Password'}))
-	
 
-class AuthorForm(forms.ModelForm):
-  class Meta:
-    model = Author
-    fields = ['fullname']
+    
+class UpdateForm(forms.ModelForm):
+	class Meta:
+		model = Author
+		fields = ['fullname', 'bio', 'profile_photo']
+		
+
