@@ -1,0 +1,12 @@
+{% extends 'Forum/Main/base.html' %}
+
+{% block content %}
+
+    <h1 style="text-align: center; margin-block: 50px; color:red;">Войти</h1>
+    <form method="POST" style="margin-left: 50px;">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button value="Войти" name="submit" style="margin-left: 50px;" class="btn btn-success btn-block btn-lg">Войти</button>
+    </form>
+
+{% endblock %}ы
