@@ -16,8 +16,6 @@ B
 register/models.py,1/e/1e512c75f2ebf49c1d1b8ffc0ffff8f3a912891e
 G
 ForumDjango/settings.py,c/e/ce19337a717443da3a1c3105374f5a367efef22d
-O
-templates/Forum/Main/index.html,6/2/62d1311e5ef139d1bda3ffd66eeae6be51a662ff
 A
 register/views.py,8/4/84d94f430f50d947286f2719ca9f76b1531730ba
 >
@@ -28,7 +26,13 @@ M
 templates/SignApp/signup.html,9/3/9395228708bcdae5d3bc9fb8a23c5ce2475e39a5
 U
 %templates/Forum/Main/create_post.html,7/9/79843d78966a0a74315f35595f92fd931d0a5c7a
-O
-templates/Forum/Main/posts.html,9/2/926fda416e25e1d3fd3898a2e8812d2172169d49
 @
 register/urls.py,b/4/b4ce84c0ec0279cbe90f45b3cfee998fae360d6e
+A
+register/forms.py,0/4/04128db8bc116b534998d79c0f4806aaf1536ed5
+?
+Forum/models.py,2/4/24c68ec13ecb3acfe9ff2fe118d7716700fc8a11
+D
+static/Forum/main.js,0/5/05dd8cfeacb63c89f3985e218da4f4d26fd4c2f2
+M
+templates/SignApp/update.html,3/f/3f41ccdf4a666ef6fb10c23021d96f8d7eee5283
