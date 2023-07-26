@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect
 
 from .forms import PostForm
-from .models import Author, Category, Post
+from .models import Author, Category, Post, Comment, Reply
 from .utils import update_views
 
 
@@ -19,6 +19,21 @@ def home(request):
 def post_detail(request, slug):
 	title = "Post Detail"
 	post = get_object_or_404(Post, slug=slug)
+	author = Author.objects.get(user=request.user)
+	
+	if 'comment-form' in request.POST:
+		comment = request.POST.get('comment')
+		author = Author.objects.get(user=request.user)
+		new_comment, created = Comment.objects.get_or_create(user = author, content = comment)
+		post.comments.add(new_comment.id)
+	
+	if 'reply-form' in request.POST:
+		reply = request.POST.get('reply')
+		comment_id = request.POST.get('comment-id')
+		comment_obj = Comment.objects.get(id=comment_id)
+		new_reply, created = Reply.objects.get_or_create(user=author, content = reply)
+		comment_obj.replies.add(new_reply.id)
+		
 	context = {
 		'title': title,
 		'post': post,
