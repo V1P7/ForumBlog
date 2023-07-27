@@ -75,7 +75,6 @@ def posts(request, slug):
 @login_required
 def create_post(request):
 	form = PostForm(request.POST or None)
-	
 	if request.method == 'POST':
 		if form.is_valid():
 			author = Author.objects.get(user = request.user)
@@ -99,3 +98,8 @@ def latest_posts(request):
 		'title': 'Latest 10 posts'
 	           }
 	return render(request, 'Forum/Main/latest_posts.html', context)
+
+
+def search_result(request):
+	
+	return render(request, 'Forum/Main/search_result.html')
