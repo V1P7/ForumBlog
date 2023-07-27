@@ -7,5 +7,5 @@ urlpatterns = [
     path('posts/<slug>/', views.posts, name='posts'),
     path('create_post/', views.create_post, name='create_post'),
     path('latest_posts/', views.latest_posts, name='latest_posts'),
-    path('search_results/', views.search_result, name='search_results'),
+    path('search_result/', views.search_result, name='search_result'),
 ]

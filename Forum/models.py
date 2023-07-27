@@ -110,4 +110,8 @@ class Post(models.Model):
     @property
     def last_reply(self):
         return self.comments.latest("date")
+    
+    @property
+    def get_(self):
+        return self.comments.latest("date")
         
