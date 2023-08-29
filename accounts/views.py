@@ -10,7 +10,7 @@ def signup(request):
         form_signup = SignUpForm(request.POST)
         if form_signup.is_valid():
             user = form_signup.save()
-            return redirect('signin')
+            return redirect('home')
     else:
         form_signup = SignUpForm()
   
@@ -31,7 +31,7 @@ def signin(request):
             user = authenticate(request, username=username, password=password)
             if user is not None:
                 login(request, user)
-                return redirect('index')
+                return redirect('home')
     else:
         form_signin = SignInForm()
 
@@ -45,4 +45,4 @@ def signin(request):
 
 def logout_user(request):
     logout(request)
-    return redirect('')
+    return redirect('home')
