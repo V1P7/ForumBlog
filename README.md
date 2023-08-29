@@ -43,7 +43,7 @@
 ![Логин](https://github.com/V1P7/ForumBlog/blob/main/media/4.png)
 
 ## Страница регистрации
-![Регистрация](https://github.com/V1P7/ForumBlog/blob/main/media/4.png)
+![Регистрация](https://github.com/V1P7/ForumBlog/blob/main/media/5.png)
 
 ## Вклад
 Если вы хотите внести свой вклад в проект, пожалуйста, создайте pull request или свяжитесь со мной через телеграм: [@V1P69](https://t.me/V1P69). Я рад любой помощи и обратной связи!
