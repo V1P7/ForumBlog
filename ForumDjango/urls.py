@@ -9,7 +9,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Forum.urls')),
     path('tinymce/', include('tinymce.urls')),
-    path('account/', include('register.urls')),
+    path('account/', include('accounts.urls')),
     path('hitcount/', include('hitcount.urls', namespace = 'hitcount')),
 ]
 
