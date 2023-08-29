@@ -12,6 +12,11 @@ git clone https://github.com/V1P7/BlogForDeveloper.git
    
 pip install -r requirements.txt
 
+4. Команды для работы с БД
+
+python manage.py makemigrations
+python manage.py migrate
+
 ## Использование
 
 1. Запустите проект:
